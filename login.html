@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="style5.css">
+  <title>Login</title>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h2 class="text-center">Login Form</h2>
+    <div class="d-flex justify-content-center mt-4">
+      <button class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    </div>
+
+    <div id="id01" class="modal">
+      <form action="https://formsubmit.co/ashleymargauxsolis@gmail.com" method="POST" class="modal-content animate">
+        <div class="closecontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+
+        <div class="container">
+          <label for="name"><b>Username</b></label>
+          <input type="name" placeholder="Enter Username" name="name" required>
+
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" required>
+
+          <button type="submit" class="btn btn-primary">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btn btn-danger">Cancel</button>
+          <span class="main">Go back to <a href="index.html">home screen?</a></span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+  var modal = document.getElementById('id01');
+
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+</body>
+</html>
