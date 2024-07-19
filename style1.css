@@ -1,0 +1,140 @@
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Console", Courier, monospace;
+    background-color: rgb(173, 136, 198);
+}
+
+#wrapper-div {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(116, 105, 182);
+    margin-top: 15px;
+}
+
+.navbar {
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+    background-color: rgb(173, 136, 198);
+}
+
+.navbar-brand {
+    height: 70px;
+    font-weight: 500;
+    color: rgb(108, 105, 105);
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.navbar-brand img {
+    height: 60px;
+    width: 60px;
+}
+
+.login-button {
+    background: rgb(116, 105, 182);
+    color: rgb(255, 230, 230);
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: rgb(255, 230, 230);
+    color: rgb(108, 105, 105);
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: rgb(108, 105, 105);
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+@media(min-width: 991px) {
+    .nav-link::before {
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+#intro-div {
+    width: 100%;
+    min-height: 60px;
+    background-color: rgb(116, 105, 182);
+    color: rgb(255, 230, 230);
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+#siteContent-div {
+    width: 100%;
+    min-height: 60px;
+    background-color: rgb(116, 105, 182);
+    color: rgb(255, 230, 230);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+#footer-div {
+    width: 100%;
+    min-height: 30px;
+    background-color: rgb(255, 230, 230);
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+#footer-div img {
+    max-height: 100%;
+    width: 50px;
+    background-color: rgb(173, 136, 198);
+    vertical-align: middle;
+    margin: 5px;
+}
+
+.container {
+    margin-top: 10px;
+}
+
+.container p {
+    margin: 10px 0;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
